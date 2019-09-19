@@ -1,0 +1,20 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //注册我们的注解处理器
+    annotationProcessor'com.google.auto.service:auto-service:1.0-rc4'
+    compileOnly'com.google.auto.service:auto-service:1.0-rc4'
+
+    implementation 'com.squareup:javapoet:1.11.1'
+    implementation project(path: ':annotations')
+}
+
+//中文乱码问题（错误：编码GBK不可映射字符）
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
