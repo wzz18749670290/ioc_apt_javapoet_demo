@@ -60,7 +60,7 @@ Connected to the target VM, address: 'localhost:5005', transport: 'socket'
 
 执行流程分析：
 
-![生成中间类流程](/Users/wangzhenzhou/demo/ioc_apt_javapoet_demo/image/生成中间类流程.jpg)
+![生成中间类流程](./image/excute_process.jpg)
 
 
 
@@ -68,4 +68,4 @@ Connected to the target VM, address: 'localhost:5005', transport: 'socket'
 
 JavaPoet一张图告诉你用法
 
-![javapoet](/Users/wangzhenzhou/demo/ioc_apt_javapoet_demo/image/javapoet.png)
+![javapoet](./image/javapoet.png)
